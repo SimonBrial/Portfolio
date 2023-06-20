@@ -1,0 +1,58 @@
+@import "../../abstract/mixins";
+
+.btn-container {
+    position: relative;
+
+    @include breakpoint(md) {
+        //width: 100%;
+        //margin: 0 auto;
+    }
+
+    .btn-background {
+        
+        border-radius: var(--general-border-radius);
+        
+        border: 3px solid black;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //position: absolute;
+        gap: 1rem;
+
+        font-size: 20px;
+        color: black;
+        width: 315px;
+        height: 70px;
+
+        
+    }
+
+    .btn-icon {
+        font-size: 45px;
+        margin-top: 5px;
+    }
+
+    .btn-front {
+        background-color: white;
+        cursor: pointer;
+        width: 315px;
+        height: 70px;
+        border: 3px solid black;
+        border-radius: var(--general-border-radius);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 20px;
+        color: black;
+        position: absolute;
+        top: -7px;
+        left: -7px;
+
+        &:active {
+            transform: translate(7px, 7px);
+            transition: transform 0.15s ease-in-out;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+@mixin container() {
+
+}
+
+@mixin title($size) {
+    color: #ffffff;
+    font-size: $size;
+    text-transform: uppercase;
+    font-family: var(--font-principal);
+}
+
+@mixin colorSelectorBox($a1, $a2, $a3, $a4) {
+    border-radius: $a1 $a2 $a3 $a4;
+    background-color: #ffffff;
+    border: 1px solid black;
+    width: 35px;
+    height: 35px;
+}
+
+@mixin dimentions($dim) {
+    width: $dim;
+    height: $dim;
+}
+
+@mixin title-section($wdt) {
+    font-size: 50px;
+    color: white;
+    width: $wdt;
+}
+// Este se puede usar en todos las secciones menos en la de about me.
+@mixin paddingContainer() {
+    padding: 2rem 5rem;
+}
+
+@mixin hoverEffect($color) {
+    &:hover {
+        color: $color;
+        transition: color 0.2s ease-in-out;
+    }
+}
+
+@mixin breakpoint($brp) {
+    @if $brp == sssm {
+        @media (max-width: 368px) {
+            @content;
+        }
+    } @else if $brp == ssm {
+        @media (max-width: 415px) {
+            @content;
+        }
+    } @else if $brp == sm {
+        @media (max-width: 640px) {
+            @content;
+        }
+    } @else if $brp == md {
+        @media (max-width: 768px) {
+            @content;
+        }
+    } @else if $brp == lg {
+        @media (max-width: 1024px) {
+            @content;
+        }
+    } @else if $brp == xl {
+        @media (max-width: 1280px) {
+            @content;
+        }
+    } @else if $brp == xxl {
+        @media (max-width: 1440px) {
+            @content;
+        }
+    }
+}

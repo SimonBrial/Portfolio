@@ -1,0 +1,88 @@
+@import "../abstract/mixins";
+
+.card-container {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    border: 3px solid black;
+    border-radius: var(--general-border-radius);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    .img-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        img {
+            object-fit: fill;
+            width: 100%;
+            height: 100%;
+            //border: 3px solid black;
+        }
+    }
+
+    .footer-card {
+        width: 100%;
+        //height: 40%;
+        padding-bottom: 4rem;
+        border-top: 3px solid black;
+        border-radius: 0px 0px 5px 5px;
+        background-color: #d9d9d9;
+
+        .footer-text {
+            margin: 1rem;
+            border: 3px solid black;
+            border-radius: var(--general-border-radius);
+            padding: 0.1rem 0.5rem;
+            background-color: white;
+        }
+
+        .btn-action-container {
+            width: 100%;
+            height: 50px;
+            bottom: 0;
+            position: absolute;
+            z-index: 10;
+            bottom: 1rem;
+            padding: 0 0.3rem;
+            display: flex;
+            //align-items: center;
+            //justify-content: space-between;
+            gap: 10.5rem;
+
+            @include breakpoint(md) {
+                margin-left: 0.15rem;
+                //gap: 10rem;
+            }
+
+            @include breakpoint(sm) {
+                margin-left: 0.7rem;
+                gap: 9.5rem;
+            }
+
+            @include breakpoint(ssm) {
+                margin-left: 0.6rem;
+                gap: 10rem;
+            }
+            @include breakpoint(sssm) {
+                margin-left: 0.4rem;
+                gap: 9.4rem;
+            }
+        }
+    }
+
+    .bg-card {
+        position: absolute;
+        z-index: -1;
+        width: 350px;
+        height: 250px;
+        top: 6px;
+        left: 6px;
+        border: 3px solid black;
+        border-radius: var(--general-border-radius);
+        //background-color: var(--theme-color1);
+    }
+}

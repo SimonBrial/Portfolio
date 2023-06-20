@@ -1,0 +1,149 @@
+@import "../abstract/mixins";
+
+.container-hero {
+    width: 100%;
+    color: white;
+    padding: 13rem 5rem 6rem 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint (md) {
+        padding: 6rem 1rem 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .description {
+        width: 50%;
+
+        @include breakpoint (md) {
+            width: 100%;
+        }
+
+        .description-title {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            margin-bottom: 1rem;
+
+            @include breakpoint (md) {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                gap: 1rem;
+                margin: 1.8rem 0;
+                padding: 0.5rem;
+                text-align: center;
+
+                h1 {
+                    font-size: 2.2rem;
+                    margin-right: -1.5rem;
+                }
+            }
+
+            .heart-name {
+                display: flex;
+                margin-left: 1.5rem;
+                padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+                align-items: center;
+                p {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+
+                .heart {
+                    margin: 0 0.5rem;
+
+                    @include breakpoint (md) {
+                        margin-right: 0rem;
+                    }
+                }
+            }
+
+            .bg-title {
+                position: absolute;
+                margin-top: -7px;
+                margin-right: -1.2rem;
+                z-index: -1;
+                width: 22rem;
+                height: 3.8rem;
+                right: 2rem;
+
+                @include breakpoint (md) {
+                    height: 6.5rem;
+                    width: 100%;
+                    z-index: -1;
+                    margin-right: -2rem;
+                }
+            }
+        }
+
+        .description-text {
+            text-align: center;
+
+            .description-text-container {
+                position: relative;
+                z-index: 10;
+                margin-bottom: 0.5rem;
+
+                @include breakpoint (md) {
+                    margin-bottom: 1.5rem;
+                }
+
+                .bg-text1 {
+                    position: absolute;
+                    z-index: -1;
+                    margin-left: -4px;
+                    width: 5.5rem;
+                    height: 1.5rem;
+                    transform: skewY(-3deg);
+                }
+
+                .bg-text2 {
+                    position: absolute;
+                    z-index: -1;
+                    margin-left: -8px;
+                    margin-top: -2px;
+                    width: 7.2rem;
+                    height: 1.5rem;
+                    transform: skewY(-2deg);
+                }
+            }
+        }
+    }
+
+    .infography {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+
+        @include breakpoint (md) {
+            width: 100%;
+        }
+    }
+
+    .social-links-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.8rem;
+        //padding-top: 5rem;
+
+        @include breakpoint (md) {
+            margin-bottom: 3rem;
+            width: 80%;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 0.5rem;
+        }
+    }
+}

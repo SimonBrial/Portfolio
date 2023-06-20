@@ -1,0 +1,18 @@
+footer {
+    width: 100%;
+    background-color: var(--header-background);
+    padding: 0.5rem 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+
+    p {
+        text-transform: uppercase;
+    }
+    span {
+        font-size: 1.3rem;
+    }
+
+}
