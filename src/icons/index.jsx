@@ -1,5 +1,6 @@
 import IconBootstrap from "./IconBootstrap";
 import IconTailwind from "./IconTailwind";
+import IconZustand from "./IconZustand";
 import IconAboutMe from "./IconAboutMe";
 import IconGithub from "./IconGithub";
 import IconFigma from "./IconFigma";
@@ -17,5 +18,4 @@ import IconNPM from "./IconNPM";
 import IconJS from "./IconJS";
 import IconTS from "./IconTS";
 import IconRR from "./IconRR";
-
-export { IconBootstrap, IconGithub, IconHTML, IconMUI, IconReact, IconTS, IconJS, IconTailwind, IconSass, IconCSS, IconFigma, IconGit, IconNPM, IconPNPM, IconAxios, IconRR, IconVite, IconHeart, IconAboutMe }
+export { IconBootstrap, IconGithub, IconHTML, IconMUI, IconReact, IconTS, IconJS, IconTailwind, IconSass, IconCSS, IconFigma, IconGit, IconNPM, IconPNPM, IconAxios, IconRR, IconVite, IconHeart, IconAboutMe, IconZustand }

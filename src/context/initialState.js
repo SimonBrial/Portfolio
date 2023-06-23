@@ -30,7 +30,6 @@ const initialState = [
                     paragraph2: {
                         clave: "Actualmente",
                         rest: ", me encuentro en el estudio de tecnologías Backend para desempeñarme en ambas áreas del desarrollo de aplicaciones web."
-
                     },
                     downBtn: "Descargar CV"
                 },
@@ -94,8 +93,8 @@ const initialState = [
         themes: [
             {
                 name: "color 1",
-                code: "#21F9B8",
-                darkCode: "#00B16C",
+                code: "#2E8071",
+                darkCode: "#034d30",
                 id: 1
             },
             {
@@ -106,19 +105,17 @@ const initialState = [
             },
             {
                 name: "color 3",
-                code: "#6BFF49",
+                code: "#AC1301",
                 darkCode: "#22E202",
                 id: 3
             },
             {
                 name: "color 4",
-                code: "#4977FF",
-                darkCode: "#002FD6",
+                code: "#0038E0",
+                darkCode: "#002ABD",
                 id: 4
             },
         ]
-
     }
 ];
-
 export default initialState;

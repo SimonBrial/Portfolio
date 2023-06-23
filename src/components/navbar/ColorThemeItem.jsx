@@ -1,11 +1,9 @@
 import { useContext } from 'react';
 import { AppContext } from '../../context/appContext';
-
 // eslint-disable-next-line react/prop-types
 const ColorThemeItem = ({ colorCode, id }) => {
     const globalContext = useContext(AppContext);
     const { selectTheme } = globalContext;
-
     return (
         <div className='dropdown-item-container'>
             <p>color {id}</p>
@@ -23,5 +21,4 @@ const ColorThemeItem = ({ colorCode, id }) => {
         </div>
     )
 }
-
 export default ColorThemeItem

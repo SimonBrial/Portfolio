@@ -9,5 +9,4 @@ const IconFigma = () => {
         </svg>
     )
 }
-
 export default IconFigma

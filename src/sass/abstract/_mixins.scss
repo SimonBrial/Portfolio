@@ -1,14 +1,9 @@
-@mixin container() {
-
-}
-
 @mixin title($size) {
     color: #ffffff;
     font-size: $size;
     text-transform: uppercase;
     font-family: var(--font-principal);
 }
-
 @mixin colorSelectorBox($a1, $a2, $a3, $a4) {
     border-radius: $a1 $a2 $a3 $a4;
     background-color: #ffffff;
@@ -16,29 +11,24 @@
     width: 35px;
     height: 35px;
 }
-
 @mixin dimentions($dim) {
     width: $dim;
     height: $dim;
 }
-
 @mixin title-section($wdt) {
     font-size: 50px;
     color: white;
     width: $wdt;
 }
-// Este se puede usar en todos las secciones menos en la de about me.
 @mixin paddingContainer() {
     padding: 2rem 5rem;
 }
-
 @mixin hoverEffect($color) {
     &:hover {
         color: $color;
         transition: color 0.2s ease-in-out;
     }
 }
-
 @mixin breakpoint($brp) {
     @if $brp == sssm {
         @media (max-width: 368px) {

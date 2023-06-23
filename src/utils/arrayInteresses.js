@@ -68,5 +68,4 @@ const arrayInteresses = [
         ],
     },
 ];
-
 export default arrayInteresses;

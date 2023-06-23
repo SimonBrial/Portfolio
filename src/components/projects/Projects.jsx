@@ -3,11 +3,9 @@ import AppContext from '../../context/appContext/AppContext';
 import "../../sass/base/_projects.scss";
 import { Card } from "./index";
 import { arrayUrl } from '../../utils/index';
-
 const Projects = () => {
     const globalContext = useContext(AppContext);
     const { descriptionApp, themes } = globalContext;
-
     return (
         <section className='projects-container' id='projects'>
             {
@@ -18,7 +16,7 @@ const Projects = () => {
                                 borderBottom:
                                     `${(themes !== undefined)
                                         ? `3px solid ${themes}`
-                                        : "3px solid #21F9B8"}`
+                                        : "3px solid #0038E0"}`
                             }}>{descriptionApp.projects.title}</h1>
                             <p>{descriptionApp.projects.paragraph}</p>
                         </div>
@@ -57,5 +55,4 @@ const Projects = () => {
         </section>
     )
 }
-
 export default Projects

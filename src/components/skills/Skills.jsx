@@ -3,12 +3,9 @@ import AppContext from '../../context/appContext/AppContext';
 import "../../sass/base/_skills.scss"
 import BtnSkills from './BtnSkills';
 import { arrayIcons } from '../../utils/index';
-
-
 const Skills = () => {
     const globalContext = useContext(AppContext);
     const { descriptionApp, themes } = globalContext;
-
     return (
         <section className='container-skills' id='skills'>
             {
@@ -18,7 +15,7 @@ const Skills = () => {
                             borderBottom:
                                 `${(themes !== undefined)
                                     ? `3px solid ${themes}`
-                                    : "3px solid #21F9B8"}`
+                                    : "3px solid #0038E0"}`
                         }}>{descriptionApp.skills.title}</h1>
                         <p>
                             {descriptionApp.skills.paragraph}
@@ -47,5 +44,4 @@ const Skills = () => {
         </section>
     )
 }
-
 export default Skills

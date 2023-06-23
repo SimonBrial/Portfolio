@@ -6,5 +6,4 @@ const IconRR = () => {
         </svg>
     )
 }
-
 export default IconRR

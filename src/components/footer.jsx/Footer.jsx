@@ -1,10 +1,8 @@
 import { useContext } from 'react';
 import { AppContext } from '../../context/appContext';
-
 const Footer = () => {
     const globalContext = useContext(AppContext);
     const {descriptionApp } = globalContext;
-
     return (
         <footer>
             {
@@ -16,5 +14,4 @@ const Footer = () => {
         </footer>
     )
 }
-
 export default Footer

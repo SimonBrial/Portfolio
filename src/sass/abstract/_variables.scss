@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
-
 :root {
     // Fonts
     --font-principal: "IBM Plex Mono", monospace;
@@ -8,12 +7,9 @@
     // Colors
     --header-background: #171A25;
     --body-background: #282a36;
-    //282a36    0E0F13
-
-    --theme-color1: #21F9B8;
+    --theme-color1: #0038E0;
     --theme-color1-opositive: #08B07E;
     --theme-color2: #08b01e;
-
     // Borders
     --general-border-radius: 5px;
 }

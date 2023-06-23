@@ -5,5 +5,4 @@ const IconBootstrap = () => {
         </svg>
     )
 }
-
 export default IconBootstrap

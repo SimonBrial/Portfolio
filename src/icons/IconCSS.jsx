@@ -13,5 +13,4 @@ const IconCSS = () => {
         </svg>
     )
 }
-
 export default IconCSS

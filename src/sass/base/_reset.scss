@@ -6,20 +6,15 @@
 body {
     font-family: var(--font-principal);
     background-color: var(--body-background);
-    //var(--body-background)
-
     height: 100%;
     cursor: default;
 }
-
 li {
     list-style: none;
 }
-
 a {
     text-decoration: none;
 }
-
 button {
     border: none;
     background: none;

@@ -1,6 +1,5 @@
 import { BsLinkedin, BsTwitter, BsGithub, BsInstagram } from "react-icons/bs";
 import { BtnSocialIcon } from "./index";
-
 const SocialLinks = () => {
     return (
         <ul className='social-links-container'>
@@ -19,5 +18,4 @@ const SocialLinks = () => {
         </ul>
     )
 }
-
 export default SocialLinks

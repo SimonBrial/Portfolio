@@ -14,5 +14,4 @@ const IconHTML = () => {
         </svg>
     )
 }
-
 export default IconHTML

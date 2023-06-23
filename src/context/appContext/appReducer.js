@@ -1,10 +1,8 @@
 /* eslint-disable no-case-declarations */
 import { SELECT_LANGUAGE, SELECT_THEME } from "../actions";
 import { arrayThemes } from "../../utils/index";
-
 export default (state, action) => {
     const { payload, type } = action;
-
     switch (type) {
         case SELECT_LANGUAGE:
             return {
@@ -13,7 +11,7 @@ export default (state, action) => {
             }
         case SELECT_THEME:
             const colorSelected = arrayThemes.filter(theme => {
-                if(theme.id === payload) {
+                if (theme.id === payload) {
                     return theme.code;
                 }
             })

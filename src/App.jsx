@@ -7,7 +7,6 @@ import Footer from './components/footer.jsx/Footer';
 import Layout from './components/Layout';
 import "./index.scss";
 import AppState from './context/appContext/AppState'
-
 const App = () => {
   return (
     <AppState>
@@ -29,5 +28,4 @@ const App = () => {
     </AppState>
   )
 }
-
 export default App

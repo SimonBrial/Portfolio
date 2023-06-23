@@ -1,5 +1,4 @@
-import { IconJS, IconSass, IconTailwind, IconBootstrap, IconCSS, IconFigma, IconGit, IconGithub, IconHTML, IconMUI, IconNPM, IconReact, IconTS, IconAxios, IconPNPM, IconRR, IconVite } from '../icons/index';
-
+import { IconJS, IconSass, IconTailwind, IconBootstrap, IconCSS, IconFigma, IconGit, IconGithub, IconHTML, IconMUI, IconNPM, IconReact, IconTS, IconAxios, IconPNPM, IconRR, IconVite, IconZustand } from '../icons/index';
 const arrayIcons = [
     IconHTML,
     IconCSS,
@@ -18,6 +17,6 @@ const arrayIcons = [
     IconVite,
     IconMUI,
     IconTS,
+    IconZustand,
 ];
-
 export default arrayIcons;

@@ -5,5 +5,4 @@ const IconNPM = () => {
         </svg>
     )
 }
-
 export default IconNPM

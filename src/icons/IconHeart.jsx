@@ -36,5 +36,4 @@ const IconHeart = () => {
         </svg>
     )
 }
-
 export default IconHeart

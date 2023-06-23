@@ -1,25 +1,20 @@
 @import "../../abstract/mixins";
-
 .theme-idioms {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
     align-items: center;
     position: relative;
-
     .switch {
         @include title(0.8rem);
-
         .switcher-title {
             text-align: center;
             margin-bottom: 0.2rem;
         }
-
         .switcher {
             display: flex;
             align-items: center;
             gap: 0.4rem;
-
             .selected-eng
                 ~ .switcher-container
                 .switcher-container-inside
@@ -27,7 +22,6 @@
                 color: red;
             }
         }
-
         .switcher-container {
             border: 1px solid black;
             //background-color: var(--theme-color1);
@@ -39,13 +33,11 @@
             align-items: center;
             justify-content: center;
         }
-
         .switcher-container-inside {
             background-color: var(--theme-color1-opositive);
             border-radius: 15px;
             width: 62px;
             height: 22px;
-
             .switcher-selector {
                 &:after {
                     display: flex;
@@ -62,35 +54,28 @@
                     transition: 0.6s;
                 }
             }
-
             #switcher {
                 display: none;
-
                 &:checked ~ .switcher-selector:after {
                     left: 43px;
                 }
             }
         }
     }
-
     .theme-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        //position: relative;
-
         .color-selector-theme {
             position: absolute;
             display: flex;
             z-index: 20;
-
             .color-selector {
                 @include colorSelectorBox(5px, 0px, 0px, 5px);
                 position: relative;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
                 .color-square {
                     border: 1px solid black;
                     position: absolute;
@@ -99,7 +84,6 @@
                     height: 20px;
                 }
             }
-
             .arrow-selector {
                 @include colorSelectorBox(0px, 5px, 5px, 0px);
                 font-size: 1.2rem;
@@ -107,7 +91,6 @@
                 align-items: center;
                 display: flex;
                 cursor: pointer;
-
                 &:active {
                     transform: translate(3px, 3px);
                     transition: transform 0.15s ease-in-out;
@@ -116,7 +99,6 @@
         }
         .bg-container {
             display: flex;
-
             .bg-selector-theme-left {
                 border: 1px solid black;
                 margin-top: 4px;
@@ -134,7 +116,6 @@
                 height: 35px;
             }
         }
-
         @keyframes showMenu {
             0% {
                 opacity: 0;
@@ -143,12 +124,10 @@
                 opacity: 1;
             }
         }
-
         .dropdown-container-active {
             animation: 0.5s showMenu ease-in-out 0s;
             animation-fill-mode: forwards;
         }
-
         .dropdown-container {
             border-radius: var(--general-border-radius);
             text-transform: uppercase;
@@ -160,19 +139,15 @@
             width: 10rem;
             z-index: 10;
             top: 7rem;
-
             transform: translateY(0px);
             transition: all 0.8s ease;
-
             @include breakpoint(md) {
                 position: relative;
                 top: 0.5rem;
                 right: 0rem;
             }
-
             ul {
                 display: block;
-
                 @include breakpoint(md) {
                     position: relative;
                     height: 10rem;
@@ -181,20 +156,17 @@
                     padding-top: 0rem;
                 }
             }
-
             .dropdown-item-container {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 width: 100%;
                 margin: 0.5rem 0;
-
                 .color-code-container {
                     position: relative;
                     z-index: 5;
                     right: 2rem;
                     height: 2rem;
-
                     .front-color-code {
                         position: absolute;
                         width: 2rem;
@@ -202,13 +174,11 @@
                         border: 1px solid black;
                         border-radius: var(--general-border-radius);
                         cursor: pointer;
-
                         &:active {
                             transform: translate(3px, 3px);
                             transition: transform 0.15s ease-in-out;
                         }
                     }
-
                     .bg-color-code {
                         position: absolute;
                         top: 3px;

@@ -11,5 +11,4 @@ const IconTailwind = () => {
         </svg>
     )
 }
-
 export default IconTailwind

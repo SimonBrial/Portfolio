@@ -5,5 +5,4 @@ const IconGit = () => {
         </svg>
     )
 }
-
 export default IconGit

@@ -28,5 +28,4 @@ const IconView = () => {
         </svg>
     )
 }
-
 export default IconView

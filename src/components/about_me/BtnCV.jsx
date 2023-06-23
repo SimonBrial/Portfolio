@@ -1,12 +1,9 @@
 import { useContext } from 'react';
 import { AppContext } from '../../context/appContext';
 import { BiCloudDownload } from "react-icons/bi";
-
-
 const BtnCV = () => {
     const globalContext = useContext(AppContext);
     const { descriptionApp, themes } = globalContext;
-
     const handleDownload = () => {
         const fileName = 'SimonBriceñoCV.pdf';
         const fileURL = `/docs/${fileName}`;
@@ -15,7 +12,6 @@ const BtnCV = () => {
         link.download = fileName;
         link.click();
     };
-
     return (
         <div className='btn-container'>
             <button
@@ -35,9 +31,8 @@ const BtnCV = () => {
                         )
                 }
             </button>
-            <div className='btn-background' style={{ backgroundColor: `${(themes !== undefined) ? themes : "#21F9B8"}` }}></div>
+            <div className='btn-background' style={{ backgroundColor: `${(themes !== undefined) ? themes : "#0038E0"}` }}></div>
         </div>
     )
 }
-
 export default BtnCV

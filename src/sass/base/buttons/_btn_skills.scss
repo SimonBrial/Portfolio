@@ -1,9 +1,7 @@
 @import "../../abstract/mixins";
-
 .btn-container-skills {
     @include dimentions(100px);
     position: relative;
-
     .front-btn-skills {
         @include dimentions(100px);
         border: 3px solid black;
@@ -11,17 +9,14 @@
         border-radius: var(--general-border-radius);
         position: absolute;
         cursor: pointer;
-
         &:active {
             transform: translate(7px, 7px);
             transition: transform 0.15s ease-in-out;
         }
-
         .skill-icon {
             @include dimentions(80px);
         }
     }
-
     .bg-btn-skills {
         @include dimentions(100px);
         //background-color: var(--theme-color1);

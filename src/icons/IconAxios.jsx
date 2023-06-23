@@ -5,5 +5,4 @@ const IconAxios = () => {
         </svg>
     )
 }
-
 export default IconAxios

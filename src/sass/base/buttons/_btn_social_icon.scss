@@ -1,15 +1,12 @@
 @import "../../abstract/mixins";
-
 .btn-social-container {
     position: relative;
     font-size: 2.1rem;
     margin-right: -2rem;
-
     @include breakpoint (md) {
         margin-top: 1.5rem;
         margin-right: 0;
     }
-
     .front-btn-social {
         cursor: pointer;
         color: white;

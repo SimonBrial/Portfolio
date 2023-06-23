@@ -1,28 +1,27 @@
 const arrayThemes = [
     {
         name: "color 1",
-        code: "#21F9B8",
-        darkCode: "#00B16C",
+        code: "#2E8071",
+        darkCode: "#034d30",
         id: 1
     },
     {
         name: "color 2",
-        code: "#BF48FF",
+        code: "#B024FF",
         darkCode: "#7600D2",
         id: 2
     },
     {
         name: "color 3",
-        code: "#6BFF49",
-        darkCode: "#22E202",
+        code: "#E60000",
+        darkCode: "#B62525",
         id: 3
     },
     {
         name: "color 4",
-        code: "#4977FF",
-        darkCode: "#002FD6",
+        code: "#0038E0",
+        darkCode: "#031865",
         id: 4
     },
 ];
-
 export default arrayThemes;

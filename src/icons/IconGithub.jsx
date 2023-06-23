@@ -5,5 +5,4 @@ const IconGithub = () => {
         </svg>
     )
 }
-
 export default IconGithub

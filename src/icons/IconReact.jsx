@@ -5,5 +5,4 @@ const IconReact = () => {
         </svg>
     )
 }
-
 export default IconReact

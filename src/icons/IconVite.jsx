@@ -17,5 +17,4 @@ const IconVite = () => {
         </svg>
     )
 }
-
 export default IconVite

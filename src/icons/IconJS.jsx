@@ -7,5 +7,4 @@ const IconJS = () => {
         </svg>
     )
 }
-
 export default IconJS

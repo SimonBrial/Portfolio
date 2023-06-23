@@ -2,26 +2,15 @@ import { useContext } from 'react';
 import AppContext from '../../context/appContext/AppContext';
 import { Switch, ColorThemeSelector } from "./index";
 import { FiMenu } from "react-icons/fi"
-
 const Navbar = () => {
-
     const globalContext = useContext(AppContext);
     const { descriptionApp, themes } = globalContext;
-
-    /* const [showMenu, setShowMenu] = useState(false);
-
-    const showMenuHandler = () => {
-        setShowMenu(!showMenu);
-    } */
-
     const handleHover = (event) => {
-        event.target.style.color = themes !== undefined ? themes : "#21F9B8";
+        event.target.style.color = themes !== undefined ? themes : "#0038E0";
     };
-
     const handleMouseOut = (event) => {
         event.target.style.color = "#FFF";
     };
-
     return (
         <div>
             <nav className='navbar'>
@@ -48,11 +37,10 @@ const Navbar = () => {
                     <ColorThemeSelector />
                 </div>
             </nav>
-            <div className='menu-hamburguer' style={{ color: `${(themes !== undefined) ? themes : "#21F9B8"}` }} >
+            <div className='menu-hamburguer' style={{ color: `${(themes !== undefined) ? themes : "#0038E0"}` }} >
                 <FiMenu />
             </div>
         </div>
     )
 }
-
 export default Navbar
