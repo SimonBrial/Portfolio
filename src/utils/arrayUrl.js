@@ -6,10 +6,10 @@ const arrayUrls = [
         urlCode: "https://github.com/SimonBrial/fake-commerce",
         technologies: ["React", "TypeScript", "Tailwind", "React Router"],
     }, {
-        urlProject: "https://gleeful-faun-5d4ee7.netlify.app/",
+        urlProject: "https://weather-app-2-0-ts.vercel.app/",
         urlImg: "img/weather_app-optimized.jpeg",
         name: "Weather App",
-        urlCode: "https://github.com/SimonBrial/Weather-app",
+        urlCode: "https://github.com/SimonBrial/WeatherApp-2.0-ts",
         technologies: ["React", "Zustand", "Tailwind", "React Router"],
     }, {
         urlProject: "https://inmuebles-practica.netlify.app/",
